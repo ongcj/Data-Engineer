@@ -1,3 +1,7 @@
+# Thoughts
+It is not idea to perform analytical queries on operational database, especially when it involves large amount of data like that below.
+ODS should be setup and data should be ingested to proper DataWarehouse architecture (perhaps Kimball) which is optimised for these queries. 
+
 #  List of our customers and their spending
 ```sql
 WITH transaction_tab AS (
